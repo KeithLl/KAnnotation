@@ -1,0 +1,17 @@
+apply plugin: 'java'
+// for Android libraries publish to Jitpack.io
+apply plugin: 'com.github.dcendents.android-maven'
+
+//Add group name
+group = 'com.github.KeithLl'
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.squareup:javapoet:1.12.1'
+    implementation project(path: ':kano')
+}
+

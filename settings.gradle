@@ -1,2 +1,4 @@
-include ':app'
 rootProject.name = "KAnnotation"
+include ':app'
+include ':kano'
+include ':kano-compiler'
